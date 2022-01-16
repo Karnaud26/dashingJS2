@@ -5,8 +5,8 @@ import { Directive, ElementRef, Renderer2 } from '@angular/core';
 })
 export class FooDirective {
 
-  constructor(eltRef : ElementRef, renderer: Renderer2) { 
-      renderer.setStyle(eltRef.nativeElement, 'color','yellow');
+  constructor(el: ElementRef, renderer: Renderer2) { 
+      renderer.setStyle(el.nativeElement, 'color','yellow');
   }
 
 }
